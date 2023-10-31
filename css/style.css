@@ -5,6 +5,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container {
+  margin: 0 50px;
+}
 img {
   display: block;
   max-width: 100%;
@@ -28,6 +31,23 @@ ul {
 h1,
 h2,
 h3,
-ps {
+p {
   margin: 0;
+}
+.header__container {
+  margin: 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.about__container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
