@@ -46,7 +46,11 @@ p {
   flex-direction: row;
   gap: 20px;
 }
+.about {
+  margin: 20px 10px 20px;
+}
 .about__container {
+  margin: 20px 0 20px;
   display: flex;
   flex-direction: row;
   gap: 100px;
