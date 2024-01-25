@@ -37,6 +37,13 @@ h3,
 p {
   margin: 0;
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  max-width: 1440px;
+}
 .header__container {
   margin: 20px 10px 20px;
   display: flex;
@@ -50,7 +57,7 @@ p {
   gap: 20px;
 }
 .about {
-  margin: 20px 10px 20px;
+  margin: 120px 10px 20px;
 }
 .about__container {
   margin: 20px 0 20px;
