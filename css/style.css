@@ -6,7 +6,10 @@ body {
   flex-direction: column;
 }
 .container {
-  margin: 0 50px;
+  max-width: 1440px;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: cadetblue;
 }
 img {
   display: block;
