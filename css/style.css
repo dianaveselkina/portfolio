@@ -11,7 +11,7 @@ body {
   max-width: 1440px;
   padding: 2rem;
   margin: 0 auto;
-  background-color: cadetblue;
+  background-color: rgb(77, 83, 83);
 }
 img {
   display: block;
