@@ -75,7 +75,8 @@ p {
   flex-direction: column;
   margin: 0 auto;
 }
-.presentation__title {
+.presentation__title,
+.contacts__title {
   font-size: 32px;
 }
 .btn {
@@ -135,4 +136,28 @@ p {
   display: flex;
   flex-direction: row;
   gap: 100px;
+}
+.contacts {
+  margin: 4rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts > p {
+  font-size: 24px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 170px;
+  justify-content: space-between;
+}
+.footer__copyright {
+  margin: 4rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__copyright > p {
+  font-size: 20px;
 }
