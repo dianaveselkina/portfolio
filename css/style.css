@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 body {
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   overflow-x: hidden;
   background-color: #fff;
@@ -45,16 +47,23 @@ p {
   max-width: 1440px;
 }
 .header__container {
-  margin: 20px 10px 20px;
+  margin: 4rem 4rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+.description {
+  font-size: 24px;
+}
+
 .menu__list {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.menu__link {
+  font-size: 20px;
 }
 .about {
   margin: 120px 10px 20px;
