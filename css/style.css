@@ -129,13 +129,22 @@ p {
   font-size: 20px;
 }
 .about {
-  margin: 120px 10px 20px;
+  margin: 4rem 4rem 2rem;
 }
 .about__container {
   margin: 20px 0 20px;
   display: flex;
   flex-direction: row;
   gap: 100px;
+}
+.about__description {
+  max-width: 40%;
+}
+.skill__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 .contacts {
   margin: 4rem 4rem 2rem;
