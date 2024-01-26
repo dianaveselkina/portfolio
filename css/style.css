@@ -67,14 +67,17 @@ p {
 }
 .projects {
   width: 602px;
-  height: 570px;
+  height: 620px;
+  margin: 30px auto;
+  overflow: hidden;
 }
 .project__slider {
   width: 4214px;
   height: 570px;
-  background-color: chartreuse;
   display: flex;
   position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 .project {
   width: 570px;
