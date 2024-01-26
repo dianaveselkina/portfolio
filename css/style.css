@@ -66,20 +66,19 @@ p {
   gap: 100px;
 }
 .projects {
-  max-width: 602px;
-  height: 482px;
+  width: 602px;
+  height: 570px;
 }
 .project__slider {
-  width: 3990px;
-  height: 450px;
+  width: 4214px;
+  height: 570px;
   background-color: chartreuse;
   display: flex;
   position: relative;
-  left: 100px;
 }
 .project {
-  max-width: 570px;
-  height: 450px;
+  width: 570px;
+  height: 570px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -89,9 +88,15 @@ p {
 }
 .project__photo {
   border-radius: 0.5rem;
+  min-width: 100%;
+  min-height: 70%;
+  flex-shrink: 0;
 }
 .project__link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.slider__next {
+  padding: 100px 0 100px;
 }
