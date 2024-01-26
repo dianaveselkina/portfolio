@@ -65,12 +65,33 @@ p {
   flex-direction: row;
   gap: 100px;
 }
+.projects {
+  max-width: 602px;
+  height: 482px;
+}
+.project__slider {
+  width: 3990px;
+  height: 450px;
+  background-color: chartreuse;
+  display: flex;
+  position: relative;
+  left: 100px;
+}
 .project {
   max-width: 570px;
   height: 450px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
   background-color: lightgrey;
+}
+.project__photo {
+  border-radius: 0.5rem;
+}
+.project__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
