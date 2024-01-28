@@ -82,7 +82,7 @@ p {
   z-index: 1;
   position: absolute;
   right: 228px;
-  top: 1px;
+  top: -100px;
   width: 70px;
   height: 70px;
   background-color: rgba(166, 182, 190, 0.3);
@@ -94,57 +94,57 @@ p {
 }
 .drop > p {
   transform: rotate(45deg);
-  margin-right: -10px;
-  margin-top: 30px;
+  margin-right: -50px;
+  margin-top: 50px;
 }
 .drop-1 {
   position: absolute;
-  left: 228px;
+  left: 65%;
   animation: drop 1s 1;
 }
 .drop-2 {
   position: absolute;
-  left: 328px;
+  left: 60%;
   animation: drop 2s 1;
 }
 .drop-3 {
   position: absolute;
-  left: 428px;
+  left: 55%;
   animation: drop 1.5s 1;
 }
 .drop-4 {
   position: absolute;
-  left: 528px;
+  left: 50%;
   animation: drop 3s 1;
 }
 .drop-5 {
   position: absolute;
-  left: 628px;
+  left: 45%;
   animation: drop 1s 1;
 }
 .drop-6 {
   position: absolute;
-  left: 728px;
+  left: 40%;
   animation: drop 2s 1;
 }
 .drop-7 {
   position: absolute;
-  left: 828px;
+  left: 35%;
   animation: drop 3s 1;
 }
 .drop-8 {
   position: absolute;
-  left: 928px;
+  left: 30%;
   animation: drop 1.5s 1;
 }
 .drop-9 {
   position: absolute;
-  left: 1028px;
+  left: 25%;
   animation: drop 2s 1;
 }
 .drop-10 {
   position: absolute;
-  left: 1128px;
+  left: 20%;
   animation: drop 1s 1;
 }
 @-webkit-keyframes drop {
