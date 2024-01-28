@@ -11,7 +11,7 @@ body {
   max-width: 1440px;
   padding: 2rem;
   margin: 0 auto;
-  background-color: rgb(77, 83, 83);
+  background-color: rgb(132, 132, 155);
 }
 img {
   display: block;
@@ -45,7 +45,7 @@ p {
   width: 100%;
   z-index: 3;
   max-width: 1440px;
-  border-color: blue;
+  background-color: rgb(132, 132, 155);
 }
 .header__container {
   margin: 4rem 4rem 2rem;
