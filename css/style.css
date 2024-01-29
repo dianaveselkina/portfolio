@@ -11,7 +11,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: rgb(132, 132, 155);
+  background-color: #989b9a;
 }
 img {
   display: block;
@@ -45,10 +45,11 @@ p {
   width: 100%;
   z-index: 3;
   max-width: 1440px;
-  background-color: rgb(58, 58, 170);
+  background-color: #989b9a;
+  /* background-color: rgba(0, 141, 210, 0.63); */
 }
 .header__container {
-  margin: 4rem 4rem 2rem;
+  margin: 2rem 2rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,40 +67,83 @@ p {
 .menu__link {
   font-size: 20px;
 }
+.animation__wrapper {
+  overflow: hidden;
+  opacity: 1;
+}
 .animation__container {
-  margin-top: 128px;
+  margin-top: 100px;
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
+  background: url('/img/ground.png') center/cover;
+  /* background-color: #989b9a; */
+  /* background: linear-gradient(
     to bottom,
     rgba(0, 141, 210, 0.63) 0%,
     rgba(0, 0, 0, 0) 100%
-  );
+    
+  ); */
 }
 .cloud {
+  z-index: 2;
   width: 404px;
   height: 251px;
-  z-index: 5;
 }
 .cloud-1 {
   background: url('/img/cloud1.png') center/cover;
   position: absolute;
-  right: 560px;
-  top: 140px;
+  right: 40%;
+  top: -14px;
+  animation: cloud1 2s 1;
 }
 .cloud-2 {
   background: url('/img/cloud2.png') center/cover;
   position: absolute;
-  right: 850px;
-  top: 110px;
+  left: 15%;
+  top: -40px;
+  animation: cloud2 1.5s 1;
 }
 .cloud-3 {
   background: url('/img/cloud3.png') center/cover;
   position: absolute;
-  right: 300px;
-  top: 110px;
+  right: 18%;
+  top: -40px;
+  animation: cloud3 1.5s 1;
+}
+@-webkit-keyframes cloud1 {
+  0% {
+    top: -14px;
+    right: 1%;
+  }
+
+  100% {
+    top: -14px;
+    right: 40%;
+  }
+}
+@-webkit-keyframes cloud2 {
+  0% {
+    top: -40px;
+    left: -30%;
+  }
+
+  100% {
+    top: -40px;
+    left: 15%;
+  }
+}
+@-webkit-keyframes cloud3 {
+  0% {
+    top: -40px;
+    right: 1%;
+  }
+
+  100% {
+    top: -40x;
+    right: 18%;
+  }
 }
 .drop {
   z-index: 1;
@@ -123,52 +167,52 @@ p {
 .drop-1 {
   position: absolute;
   left: 65%;
-  animation: drop 1s 1;
+  animation: drop 2s 1 2s;
 }
 .drop-2 {
   position: absolute;
   left: 60%;
-  animation: drop 2s 1;
+  animation: drop 3s 1 2s;
 }
 .drop-3 {
   position: absolute;
   left: 55%;
-  animation: drop 1.5s 1;
+  animation: drop 2.5s 1 2s;
 }
 .drop-4 {
   position: absolute;
   left: 50%;
-  animation: drop 3s 1;
+  animation: drop 3.5s 1 2s;
 }
 .drop-5 {
   position: absolute;
   left: 45%;
-  animation: drop 1s 1;
+  animation: drop 2s 1 2s;
 }
 .drop-6 {
   position: absolute;
   left: 40%;
-  animation: drop 2s 1;
+  animation: drop 3s 1 2s;
 }
 .drop-7 {
   position: absolute;
   left: 35%;
-  animation: drop 3s 1;
+  animation: drop 3.5s 1 2s;
 }
 .drop-8 {
   position: absolute;
   left: 30%;
-  animation: drop 1.5s 1;
+  animation: drop 2.5s 1 2s;
 }
 .drop-9 {
   position: absolute;
   left: 25%;
-  animation: drop 2s 1;
+  animation: drop 3s 1 2s;
 }
 .drop-10 {
   position: absolute;
   left: 20%;
-  animation: drop 1s 1;
+  animation: drop 2s 1 2s;
 }
 @-webkit-keyframes drop {
   0% {
@@ -181,8 +225,32 @@ p {
     border-radius: 10px 35px 35px 35px;
   }
 }
+.lightning {
+  position: absolute;
+  right: 50%;
+  top: 150px;
+}
+.lightning1 {
+  position: absolute;
+  right: 30%;
+  top: 150px;
+}
+path {
+  stroke-width: 6;
+  stroke: rgb(253, 248, 176);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: lightning 0.5s linear 2s;
+}
+
+@-webkit-keyframes lightning {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .presentation {
-  margin: 200px auto 100px;
+  margin: 60px auto 100px;
 }
 .presentation__wrapper {
   max-width: 602px;
