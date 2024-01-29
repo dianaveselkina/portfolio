@@ -42,7 +42,7 @@ p {
 .header {
   position: fixed;
   top: 0;
-  width: 90vw;
+  width: 100%;
   z-index: 3;
   max-width: 1440px;
   background-color: rgb(58, 58, 170);
@@ -272,10 +272,6 @@ p {
   justify-content: space-between;
   gap: 20px;
 }
-.telephone {
-  font-size: 20px;
-  font-weight: bold;
-}
 .social__icons {
   display: flex;
   flex-direction: row;
@@ -283,6 +279,11 @@ p {
 }
 .contacts__text {
   font-size: 20px;
+}
+.contacts__text > p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
 }
 .footer__copyright {
   margin: 4rem 4rem 2rem;
