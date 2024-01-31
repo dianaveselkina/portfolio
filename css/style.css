@@ -416,9 +416,22 @@ path {
 .animation__palm {
   width: 30px;
   height: 100px;
-  margin: 600px auto 10px;
+  position: absolute;
+  bottom: -100px;
+  margin-left: 300px;
   z-index: 7;
   background: url('/img/palm.png') center/cover;
+  animation: growth 7s 4s forwards;
+}
+@-webkit-keyframes growth {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    width: 318px;
+    height: 600px;
+  }
 }
 /* #fern {
   background: url('/img/fern9.svg');
