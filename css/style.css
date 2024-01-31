@@ -418,12 +418,18 @@ path {
   height: 100px;
   position: absolute;
   bottom: -100px;
-  margin-left: 300px;
+  margin-left: 25vw;
   z-index: 7;
   background: url('/img/palm.png') center/cover;
   animation: growth 7s 4s forwards;
 }
 @-webkit-keyframes growth {
+  to {
+    height: 622px;
+    width: 462px;
+  }
+}
+/* @-webkit-keyframes growth {
   0% {
     bottom: -100px;
   }
@@ -432,7 +438,7 @@ path {
     width: 318px;
     height: 600px;
   }
-}
+} */
 /* #fern {
   background: url('/img/fern9.svg');
   height: 99%;
