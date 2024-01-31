@@ -413,3 +413,32 @@ path {
 .footer__copyright > p {
   font-size: 20px;
 }
+.animation__palm {
+  width: 30px;
+  height: 100px;
+  margin: 600px auto 10px;
+  z-index: 7;
+  background: url('/img/palm.png') center/cover;
+}
+/* #fern {
+  background: url('/img/fern9.svg');
+  height: 99%;
+  width: 344px;
+  margin: 0 auto;
+  z-index: 6;
+  animation: sprite-animation 6s steps(9, start);
+}
+
+@keyframes sprite-animation {
+  0% {
+    opacity: 0;
+    background-position: 0 0;
+  }
+  10% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3100px 0;
+  }
+} */
