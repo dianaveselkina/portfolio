@@ -462,11 +462,17 @@ path {
   left: 209px;
   transform: rotate(0deg);
 }
-.project__coconut {
+.project__coconut1 {
   width: 50px;
   border-radius: 50%;
   height: 60px;
   transform: rotate(8deg);
+}
+.project__coconut2 {
+  width: 50px;
+  border-radius: 50%;
+  height: 60px;
+  transform: rotate(347deg);
 }
 /* @-webkit-keyframes growth {
   0% {
