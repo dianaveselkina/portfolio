@@ -276,7 +276,78 @@ path {
     box-shadow: 0px 0px 30px 60px rgba(253, 248, 176);
   }
 }
+.ground {
+  position: relative;
+}
 
+.animation__palm {
+  width: 10px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  bottom: -800px;
+  z-index: 2;
+  background: url('/img/palm.png') center/cover;
+  animation: growth 7s 4s forwards;
+}
+@-webkit-keyframes growth {
+  to {
+    transform: translate(0, -600px);
+    width: 422px;
+    height: 622px;
+  }
+}
+.coconut {
+  opacity: 0;
+  background-color: brown;
+  width: 50px;
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  top: 35px;
+  left: 235px;
+  transform: rotate(45deg);
+  animation: emergence 1s 1s forwards;
+}
+@-webkit-keyframes emergence {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.coconut-2 {
+  top: 35px;
+  left: 182px;
+  transform: rotate(-45deg);
+}
+.coconut-3 {
+  top: 74px;
+  left: 209px;
+  transform: rotate(0deg);
+}
+.project__coconut1 {
+  width: 50px;
+  border-radius: 50%;
+  height: 60px;
+  transform: rotate(8deg);
+}
+.project__coconut2 {
+  width: 50px;
+  border-radius: 50%;
+  height: 60px;
+  transform: rotate(347deg);
+}
+.project__coconut3 {
+  width: 50px;
+  border-radius: 50%;
+  height: 60px;
+  transform: rotate(0deg);
+}
 .presentation {
   margin: 60px auto 100px;
 }
@@ -413,67 +484,7 @@ path {
 .footer__copyright > p {
   font-size: 20px;
 }
-.animation__palm {
-  width: 30px;
-  height: 100px;
-  position: absolute;
-  bottom: -100px;
-  margin-left: 25vw;
-  z-index: 2;
-  background: url('/img/palm.png') center/cover;
-  animation: growth 7s 4s forwards;
-}
-@-webkit-keyframes growth {
-  to {
-    height: 622px;
-    width: 462px;
-  }
-}
-.coconut {
-  opacity: 0;
-  background-color: brown;
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  position: absolute;
-  top: 35px;
-  left: 235px;
-  transform: rotate(45deg);
-  animation: emergence 1s 1s forwards;
-}
-@-webkit-keyframes emergence {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.coconut-2 {
-  top: 35px;
-  left: 182px;
-  transform: rotate(-45deg);
-}
-.coconut-3 {
-  top: 74px;
-  left: 209px;
-  transform: rotate(0deg);
-}
-.project__coconut1 {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  transform: rotate(8deg);
-}
-.project__coconut2 {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  transform: rotate(347deg);
-}
+
 /* @-webkit-keyframes growth {
   0% {
     bottom: -100px;
