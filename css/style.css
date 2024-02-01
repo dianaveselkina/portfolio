@@ -112,7 +112,7 @@ p {
   top: -40px;
   animation: cloud3 1.5s 1;
 }
-@-webkit-keyframes cloud1 {
+@keyframes cloud1 {
   0% {
     top: -14px;
     right: 1%;
@@ -123,7 +123,7 @@ p {
     right: 40%;
   }
 }
-@-webkit-keyframes cloud2 {
+@keyframes cloud2 {
   0% {
     top: -40px;
     left: -30%;
@@ -134,7 +134,7 @@ p {
     left: 15%;
   }
 }
-@-webkit-keyframes cloud3 {
+@keyframes cloud3 {
   0% {
     top: -40px;
     right: 1%;
@@ -214,7 +214,7 @@ p {
   left: 20%;
   animation: drop 2s 1 1s;
 }
-@-webkit-keyframes drop {
+@keyframes drop {
   0% {
     top: 1px;
     border-radius: 5px 35px 35px 35px;
@@ -243,7 +243,7 @@ path {
   animation: lightning 0.5s linear 2s;
 }
 
-@-webkit-keyframes lightning {
+@keyframes lightning {
   100% {
     stroke-dashoffset: 0;
   }
@@ -290,7 +290,7 @@ path {
   background: url('/img/palm.png') center/cover;
   animation: growth 7s 4s forwards;
 }
-@-webkit-keyframes growth {
+@keyframes growth {
   to {
     transform: translate(0, -600px);
     width: 422px;
@@ -311,10 +311,9 @@ path {
   transform: rotate(45deg);
 }
 .coconut:hover {
-  transform: scale(2);
   box-shadow: 1px 1px 8px 3px rgb(100, 100, 96);
 }
-@-webkit-keyframes emergence {
+@keyframes emergence {
   0% {
     opacity: 0;
   }
@@ -328,7 +327,7 @@ path {
 .coconut-1 {
   top: 35px;
   left: 235px;
-  transform: rotate(-45deg);
+  transform: rotate(25deg);
   animation: fall1 1s ease-in 12s forwards;
 }
 
@@ -368,14 +367,12 @@ path {
     transform: translate(-150px, 426px);
   }
 }
-.coconut-1:hover {
-  transform: scale(2);
-}
+
 .project__coconut1 {
   width: 50px;
   border-radius: 50%;
   height: 60px;
-  transform: rotate(8deg);
+  transform: rotate(25deg);
 }
 .project__coconut2 {
   width: 50px;
@@ -480,6 +477,12 @@ path {
   align-items: center;
   gap: 10px;
 }
+.skill:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  color: rgb(109, 38, 241);
+  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
+}
 .contacts {
   margin: 4rem 4rem 2rem;
   display: flex;
@@ -525,36 +528,7 @@ path {
 .footer__copyright > p {
   font-size: 20px;
 }
-
-/* @-webkit-keyframes growth {
-  0% {
-    bottom: -100px;
-  }
-
-  100% {
-    width: 318px;
-    height: 600px;
-  }
-} */
-/* #fern {
-  background: url('/img/fern9.svg');
-  height: 99%;
-  width: 344px;
-  margin: 0 auto;
-  z-index: 6;
-  animation: sprite-animation 6s steps(9, start);
+.icon:hover {
+  color: rgb(109, 38, 241);
+  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
-
-@keyframes sprite-animation {
-  0% {
-    opacity: 0;
-    background-position: 0 0;
-  }
-  10% {
-    opacity: 1;
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -3100px 0;
-  }
-} */
