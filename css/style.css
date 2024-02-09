@@ -538,13 +538,13 @@ path {
     margin: 0 auto;
     padding: 0 15px;
   }
-  .about__container {
-    flex-direction: column;
-  }
+
   .header {
     max-width: 525px;
   }
-
+  .presentation {
+    margin: 60px auto 30px;
+  }
   .presentation__wrapper {
     max-width: 480px;
   }
@@ -556,5 +556,14 @@ path {
   }
   .project {
     width: 480px;
+  }
+  .about {
+    margin: 1rem 1rem 1rem;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .about__description {
+    width: 99%;
   }
 }
