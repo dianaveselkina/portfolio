@@ -326,20 +326,20 @@ path {
 }
 .coconut-1 {
   top: 35px;
-  left: 235px;
+  left: 225px;
   transform: rotate(25deg);
   animation: fall1 1s ease-in 12s forwards;
 }
 
 .coconut-2 {
   top: 35px;
-  left: 182px;
+  left: 172px;
   transform: rotate(-45deg);
   animation: fall2 0.5s ease-in 13s forwards;
 }
 .coconut-3 {
   top: 74px;
-  left: 209px;
+  left: 199px;
   transform: rotate(0deg);
   animation: fall3 0.8s ease-in 14s forwards;
 }
