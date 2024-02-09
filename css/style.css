@@ -84,7 +84,7 @@ p {
   height: 800px;
   position: relative;
   overflow: hidden;
-  background: url('/img/ground.png') center/cover;
+  background: url('/img/ground1.png') center/cover;
 }
 .cloud {
   z-index: 2;
@@ -152,12 +152,12 @@ p {
   top: -100px;
   width: 70px;
   height: 70px;
-  background-color: rgba(166, 182, 190, 0.3);
+  background-color: rgba(179, 49, 32, 0.3);
   border-radius: 0 35px 35px 35px;
   transform: rotate(45deg) skewY(0deg);
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
     15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
-    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+    inset -10px -10px 15px rgba(145, 76, 76, 0.9);
 }
 .drop > p {
   transform: rotate(45deg);
@@ -237,7 +237,7 @@ p {
 }
 path {
   stroke-width: 6;
-  stroke: rgb(253, 248, 176);
+  stroke: rgb(241, 146, 102);
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: lightning 0.5s linear 2s;
@@ -249,31 +249,31 @@ path {
   }
 }
 .glow {
-  width: 100px;
-  background-color: rgb(253, 248, 176);
+  width: 50px;
+  background-color: rgb(241, 146, 102);
   opacity: 0;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 25px;
   position: absolute;
   right: 45%;
-  top: 160px;
+  top: 120px;
   animation: shadow 1s 1 1.8s;
 }
 .glow-2 {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
   right: 47%;
-  top: 170px;
+  top: 130px;
 }
 @keyframes shadow {
   0% {
     opacity: 0;
-    box-shadow: 0px 0px 20px 10px rgba(253, 248, 176);
+    box-shadow: 0px 0px 20px 10px rgb(241, 146, 102);
   }
   100% {
     opacity: 0.5;
-    box-shadow: 0px 0px 30px 60px rgba(253, 248, 176);
+    box-shadow: 0px 0px 100px 100px rgb(241, 146, 102);
   }
 }
 .ground {
