@@ -532,3 +532,29 @@ path {
   color: rgb(109, 38, 241);
   box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
+@media (width<=720px) {
+  .container {
+    max-width: 525px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .header {
+    max-width: 525px;
+  }
+
+  .presentation__wrapper {
+    max-width: 480px;
+  }
+  .projects {
+    width: 480px;
+  }
+  .project__slider {
+    width: 3840px;
+  }
+  .project {
+    width: 480px;
+  }
+}
