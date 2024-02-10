@@ -533,29 +533,45 @@ path {
   box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
 @media (width<=720px) {
+  h1 {
+    font-size: 1rem;
+  }
   .container {
-    max-width: 525px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
   }
 
   .header {
-    max-width: 525px;
+    max-width: 375px;
+  }
+  .header__container {
+    margin: 1.5rem 0.5rem 0.5rem;
+  }
+  .description {
+    font-size: 18px;
+  }
+
+  .menu__list {
+    gap: 14px;
+  }
+  .menu__link {
+    font-size: 18px;
   }
   .presentation {
     margin: 60px auto 30px;
   }
   .presentation__wrapper {
-    max-width: 480px;
+    max-width: 365px;
   }
   .projects {
-    width: 480px;
+    width: 365px;
   }
   .project__slider {
-    width: 3840px;
+    width: 2920px;
   }
   .project {
-    width: 480px;
+    width: 365px;
   }
   .about {
     margin: 1rem 1rem 1rem;
