@@ -279,6 +279,11 @@ path {
 .ground {
   position: relative;
 }
+.link__draft {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
 .robot1 {
   z-index: 2;
   width: 90px;
@@ -299,7 +304,54 @@ path {
   top: 622px;
   animation: cube1 4s forwards, cactus1 0.5s 8s forwards;
 }
-
+.link__project1 {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  background: url('/img/flower1.png') center/cover;
+  animation: link1 2s 10s forwards;
+}
+@keyframes link1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+.link__project2 {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  background: url('/img/flower2.png') center/cover;
+  animation: link2 2s 10s forwards;
+}
+@keyframes link2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(3);
+  }
+}
+.link__project3 {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  background: url('/img/flower3.png') center/cover;
+  animation: link3 2s 10s forwards;
+}
+@keyframes link3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.7);
+  }
+}
 @keyframes robot1 {
   50% {
     top: 500px;
@@ -385,11 +437,11 @@ path {
 .cube3 {
   z-index: 1;
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background: radial-gradient(#4b6d34, #36261d);
   right: -7%;
-  top: 546px;
+  top: 531px;
   animation: cube3 4s 1 forwards, cactus1 0.5s 9s forwards;
 }
 @keyframes robot3 {
@@ -404,26 +456,14 @@ path {
 }
 @keyframes cube3 {
   0% {
-    top: 546px;
+    top: 531px;
     right: -7%;
   }
   100% {
-    top: 546px;
+    top: 531px;
     right: 48%;
     transform: rotate(-360deg);
   }
-}
-.project__coconut1 {
-  width: 45px;
-  height: 45px;
-}
-.project__coconut2 {
-  width: 75px;
-  height: 75px;
-}
-.project__coconut3 {
-  width: 30px;
-  height: 30px;
 }
 .presentation {
   margin: 60px auto 100px;
