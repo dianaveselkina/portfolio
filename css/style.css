@@ -51,7 +51,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
   max-width: 1440px;
   background-color: #989b9a;
 }
@@ -87,7 +87,7 @@ p {
   background: url('/img/ground1.png') center/cover;
 }
 .cloud {
-  z-index: 2;
+  z-index: 5;
   width: 404px;
   height: 251px;
 }
@@ -146,18 +146,18 @@ p {
   }
 }
 .drop {
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   right: 228px;
   top: -100px;
   width: 70px;
   height: 70px;
-  background-color: rgba(179, 49, 32, 0.3);
+  background-color: rgba(189, 235, 241, 0.199);
   border-radius: 0 35px 35px 35px;
   transform: rotate(45deg) skewY(0deg);
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
     15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
-    inset -10px -10px 15px rgba(145, 76, 76, 0.9);
+    inset -10px -10px 15px rgba(189, 235, 241, 0.473);
 }
 .drop > p {
   transform: rotate(45deg);
@@ -237,10 +237,10 @@ p {
 }
 path {
   stroke-width: 6;
-  stroke: rgb(241, 146, 102);
+  stroke: rgb(140, 130, 197);
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: lightning 0.5s linear 2s;
+  animation: lightning 0.5s 2 linear 2s;
 }
 
 @keyframes lightning {
@@ -250,14 +250,14 @@ path {
 }
 .glow {
   width: 50px;
-  background-color: rgb(241, 146, 102);
+  background-color: rgb(140, 130, 197);
   opacity: 0;
-  height: 100px;
+  height: 200px;
   border-radius: 25px;
   position: absolute;
   right: 45%;
   top: 120px;
-  animation: shadow 1s 1 1.8s;
+  animation: shadow 1s 2 1.8s;
 }
 .glow-2 {
   width: 100px;
@@ -269,11 +269,11 @@ path {
 @keyframes shadow {
   0% {
     opacity: 0;
-    box-shadow: 0px 0px 20px 10px rgb(241, 146, 102);
+    box-shadow: 0px 0px 20px 10px rgb(140, 130, 197);
   }
   100% {
     opacity: 0.5;
-    box-shadow: 0px 0px 100px 100px rgb(241, 146, 102);
+    box-shadow: 0px 0px 100px 100px rgb(140, 130, 197);
   }
 }
 .ground {
@@ -297,8 +297,9 @@ path {
   background-color: brown;
   right: 103%;
   top: 622px;
-  animation: cube1 4s forwards;
+  animation: cube1 4s forwards, cactus1 0.5s 5s forwards;
 }
+
 @keyframes robot1 {
   50% {
     top: 500px;
@@ -313,6 +314,7 @@ path {
   0% {
     top: 622px;
     right: 103%;
+    background-color: brown;
   }
   100% {
     top: 622px;
@@ -320,7 +322,15 @@ path {
     transform: rotate(360deg);
   }
 }
-
+@keyframes cactus1 {
+  0% {
+    background-color: brown;
+  }
+  100% {
+    transform: scale(2);
+    background: url('/img/cactus.png') center/cover;
+  }
+}
 .robot2 {
   z-index: 3;
   width: 130px;
@@ -339,7 +349,7 @@ path {
   background-color: brown;
   right: -3%;
   top: 705px;
-  animation: cube2 4s 1 forwards;
+  animation: cube2 4s 1 forwards, cactus1 0.5s 7s forwards;
 }
 @keyframes robot2 {
   50% {
@@ -380,7 +390,7 @@ path {
   background-color: brown;
   right: -7%;
   top: 546px;
-  animation: cube3 4s 1 forwards;
+  animation: cube3 4s 1 forwards, cactus1 0.5s 6s forwards;
 }
 @keyframes robot3 {
   50% {
@@ -403,94 +413,6 @@ path {
     transform: rotate(-360deg);
   }
 }
-.animation__palm {
-  width: 10px;
-  height: 50px;
-  position: relative;
-  margin: 0 auto;
-  bottom: -800px;
-  z-index: 2;
-  background: url('/img/palm.png') center/cover;
-  animation: growth 7s 4s forwards;
-}
-@keyframes growth {
-  to {
-    transform: translate(0, -600px);
-    width: 422px;
-    height: 622px;
-  }
-}
-.coconut__block {
-  animation: emergence 10s 1s forwards;
-}
-
-.coconut {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  position: absolute;
-  top: 35px;
-  left: 235px;
-  transform: rotate(45deg);
-}
-.coconut:hover {
-  box-shadow: 1px 1px 8px 3px rgb(100, 100, 96);
-}
-@keyframes emergence {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.coconut-1 {
-  top: 35px;
-  left: 225px;
-  transform: rotate(25deg);
-  animation: fall1 1s ease-in 12s forwards;
-}
-
-.coconut-2 {
-  top: 35px;
-  left: 172px;
-  transform: rotate(-45deg);
-  animation: fall2 0.5s ease-in 13s forwards;
-}
-.coconut-3 {
-  top: 74px;
-  left: 199px;
-  transform: rotate(0deg);
-  animation: fall3 0.8s ease-in 14s forwards;
-}
-@keyframes fall1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(100px, 426px);
-  }
-}
-@keyframes fall2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50px, 426px);
-  }
-}
-@keyframes fall3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-150px, 426px);
-  }
-}
-
 .project__coconut1 {
   width: 45px;
   height: 45px;
