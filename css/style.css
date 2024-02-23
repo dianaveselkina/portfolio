@@ -492,22 +492,16 @@ path {
 }
 
 .project__coconut1 {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  transform: rotate(25deg);
+  width: 45px;
+  height: 45px;
 }
 .project__coconut2 {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  transform: rotate(347deg);
+  width: 75px;
+  height: 75px;
 }
 .project__coconut3 {
-  width: 50px;
-  border-radius: 50%;
-  height: 60px;
-  transform: rotate(0deg);
+  width: 30px;
+  height: 30px;
 }
 .presentation {
   margin: 60px auto 100px;
