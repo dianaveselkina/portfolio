@@ -294,10 +294,10 @@ path {
   position: absolute;
   width: 45px;
   height: 45px;
-  background-color: brown;
+  background: radial-gradient(#4b6d34, #36261d);
   right: 103%;
   top: 622px;
-  animation: cube1 4s forwards, cactus1 0.5s 5s forwards;
+  animation: cube1 4s forwards, cactus1 0.5s 8s forwards;
 }
 
 @keyframes robot1 {
@@ -314,7 +314,7 @@ path {
   0% {
     top: 622px;
     right: 103%;
-    background-color: brown;
+    background: radial-gradient(#4b6d34, #36261d);
   }
   100% {
     top: 622px;
@@ -324,7 +324,7 @@ path {
 }
 @keyframes cactus1 {
   0% {
-    background-color: brown;
+    background: radial-gradient(#4b6d34, #36261d);
   }
   100% {
     transform: scale(2);
@@ -346,7 +346,7 @@ path {
   position: absolute;
   width: 75px;
   height: 75px;
-  background-color: brown;
+  background: radial-gradient(#4b6d34, #36261d);
   right: -3%;
   top: 705px;
   animation: cube2 4s 1 forwards, cactus1 0.5s 7s forwards;
@@ -387,10 +387,10 @@ path {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: brown;
+  background: radial-gradient(#4b6d34, #36261d);
   right: -7%;
   top: 546px;
-  animation: cube3 4s 1 forwards, cactus1 0.5s 6s forwards;
+  animation: cube3 4s 1 forwards, cactus1 0.5s 9s forwards;
 }
 @keyframes robot3 {
   50% {
