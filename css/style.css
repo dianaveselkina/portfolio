@@ -167,52 +167,52 @@ p {
 .drop-1 {
   position: absolute;
   left: 65%;
-  animation: drop 2s 1 0.5s;
+  animation: drop 2s 1 4.5s;
 }
 .drop-2 {
   position: absolute;
   left: 60%;
-  animation: drop 3.5s 1 2s;
+  animation: drop 3.5s 1 6s;
 }
 .drop-3 {
   position: absolute;
   left: 55%;
-  animation: drop 3s 1 1s;
+  animation: drop 3s 1 5s;
 }
 .drop-4 {
   position: absolute;
   left: 50%;
-  animation: drop 3.5s 1 1s;
+  animation: drop 3.5s 1 5s;
 }
 .drop-5 {
   position: absolute;
   left: 45%;
-  animation: drop 3s 1 1.5s;
+  animation: drop 3s 1 5.5s;
 }
 .drop-6 {
   position: absolute;
   left: 40%;
-  animation: drop 3.5s 1 2s;
+  animation: drop 3.5s 1 6s;
 }
 .drop-7 {
   position: absolute;
   left: 35%;
-  animation: drop 3.5s 1 1.5s;
+  animation: drop 3.5s 1 5.5s;
 }
 .drop-8 {
   position: absolute;
   left: 30%;
-  animation: drop 4s 1 2s;
+  animation: drop 4s 1 6s;
 }
 .drop-9 {
   position: absolute;
   left: 25%;
-  animation: drop 3s 1 2s;
+  animation: drop 3s 1 6s;
 }
 .drop-10 {
   position: absolute;
   left: 20%;
-  animation: drop 2s 1 1s;
+  animation: drop 2s 1 5s;
 }
 @keyframes drop {
   0% {
@@ -287,8 +287,39 @@ path {
   position: absolute;
   right: 105%;
   top: 500px;
-  animation: robot1 2s 1;
+  animation: robot1 8s forwards;
 }
+.cube1 {
+  z-index: 1;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: brown;
+  right: 103%;
+  top: 622px;
+  animation: cube1 4s forwards;
+}
+@keyframes robot1 {
+  50% {
+    top: 500px;
+    right: 55%;
+  }
+  100% {
+    top: 500px;
+    right: 105%;
+  }
+}
+@keyframes cube1 {
+  0% {
+    top: 622px;
+    right: 103%;
+  }
+  100% {
+    top: 622px;
+    right: 53%;
+  }
+}
+
 .robot2 {
   z-index: 3;
   width: 130px;
@@ -297,7 +328,37 @@ path {
   position: absolute;
   right: -10%;
   top: 530px;
-  animation: robot1 2s 1;
+  animation: robot2 8s 1 forwards;
+}
+.cube2 {
+  z-index: 2;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: brown;
+  right: -3%;
+  top: 705px;
+  animation: cube2 4s 1 forwards;
+}
+@keyframes robot2 {
+  50% {
+    top: 530px;
+    right: 25%;
+  }
+  100% {
+    top: 530px;
+    right: -10%;
+  }
+}
+@keyframes cube2 {
+  0% {
+    top: 705px;
+    right: -3%;
+  }
+  100% {
+    top: 705px;
+    right: 32%;
+  }
 }
 .robot3 {
   z-index: 2;
@@ -307,9 +368,38 @@ path {
   position: absolute;
   right: -10%;
   top: 490px;
-  animation: robot1 2s 1;
+  animation: robot3 8s 1 forwards;
 }
-
+.cube3 {
+  z-index: 1;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  right: -7%;
+  top: 546px;
+  animation: cube3 4s 1 forwards;
+}
+@keyframes robot3 {
+  50% {
+    top: 490px;
+    right: 45%;
+  }
+  100% {
+    top: 490px;
+    right: -10%;
+  }
+}
+@keyframes cube3 {
+  0% {
+    top: 546px;
+    right: -7%;
+  }
+  100% {
+    top: 546px;
+    right: 48%;
+  }
+}
 .animation__palm {
   width: 10px;
   height: 50px;
