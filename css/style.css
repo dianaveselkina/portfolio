@@ -16,7 +16,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #989b9a;
+  background-color: #92a2b8;
 }
 img {
   display: block;
@@ -53,7 +53,7 @@ p {
   width: 100%;
   z-index: 6;
   max-width: 1440px;
-  background-color: #989b9a;
+  background-color: #92a2b8;
 }
 .header__container {
   margin: 2rem 2rem 2rem;
@@ -582,6 +582,7 @@ path {
   align-items: center;
   gap: 20px;
 }
+
 .contacts__block {
   display: flex;
   flex-direction: row;
