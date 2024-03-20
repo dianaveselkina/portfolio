@@ -13,7 +13,7 @@ body {
   flex-direction: column;
 }
 .container {
-  max-width: 1440px;
+  max-width: 144em;
   margin: 0 auto;
   padding: 2rem;
   background-color: #92a2b8;
@@ -50,9 +50,9 @@ p {
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 96%;
   z-index: 6;
-  max-width: 1440px;
+  max-width: 144em;
   background-color: #92a2b8;
 }
 .header__container {
@@ -63,7 +63,7 @@ p {
   align-items: center;
 }
 .description {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .menu__list {
@@ -88,55 +88,55 @@ p {
 }
 .cloud {
   z-index: 5;
-  width: 404px;
-  height: 251px;
+  width: 25.25em;
+  height: 15.7em;
 }
 .cloud-1 {
   background: url('/img/cloud1.png') center/cover;
   position: absolute;
   right: 40%;
-  top: -14px;
+  top: -0.8em;
   animation: cloud1 2s 1;
 }
 .cloud-2 {
   background: url('/img/cloud2.png') center/cover;
   position: absolute;
   left: 15%;
-  top: -40px;
+  top: -2.5em;
   animation: cloud2 1.5s 1;
 }
 .cloud-3 {
   background: url('/img/cloud3.png') center/cover;
   position: absolute;
   right: 18%;
-  top: -40px;
+  top: -2.5em;
   animation: cloud3 1.5s 1;
 }
 @keyframes cloud1 {
   0% {
-    top: -14px;
+    top: -0.8em;
     right: 1%;
   }
 
   100% {
-    top: -14px;
+    top: -0.8em;
     right: 40%;
   }
 }
 @keyframes cloud2 {
   0% {
-    top: -40px;
+    top: -2.5em;
     left: -30%;
   }
 
   100% {
-    top: -40px;
+    top: -2.5em;
     left: 15%;
   }
 }
 @keyframes cloud3 {
   0% {
-    top: -40px;
+    top: -2.5em;
     right: 1%;
   }
 
@@ -148,21 +148,21 @@ p {
 .drop {
   z-index: 3;
   position: absolute;
-  right: 228px;
-  top: -100px;
-  width: 70px;
-  height: 70px;
+  right: 14.25em;
+  top: -6.25em;
+  width: 4.4em;
+  height: 4.4em;
   background-color: rgba(189, 235, 241, 0.199);
   border-radius: 0 35px 35px 35px;
   transform: rotate(45deg) skewY(0deg);
-  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
-    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 1.5em 1.5em rgba(0, 0, 0, 0.05),
-    inset -10px -10px 15px rgba(189, 235, 241, 0.473);
+  box-shadow: inset 0.625em 0.625em 0.625em rgba(0, 0, 0, 0.05),
+    1em 1.6em 0.625em rgba(0, 0, 0, 0.1), 1em 1.5em 1.5em rgba(0, 0, 0, 0.05),
+    inset -0.625em -0.625em 1em rgba(189, 235, 241, 0.473);
 }
 .drop > p {
   transform: rotate(45deg);
-  margin-right: -50px;
-  margin-top: 50px;
+  margin-right: -3.13em;
+  margin-top: 3.13em;
 }
 .drop-1 {
   position: absolute;
@@ -221,19 +221,19 @@ p {
   }
 
   100% {
-    top: calc(100% - 40px);
-    border-radius: 10px 35px 35px 35px;
+    top: calc(100% - 2.5em);
+    border-radius: 0.625em 35px 35px 35px;
   }
 }
 .lightning {
   position: absolute;
   right: 50%;
-  top: 150px;
+  top: 9.38em;
 }
 .lightning1 {
   position: absolute;
   right: 30%;
-  top: 150px;
+  top: 9.38em;
 }
 path {
   stroke-width: 6;
@@ -249,31 +249,31 @@ path {
   }
 }
 .glow {
-  width: 50px;
+  width: 3.13em;
   background-color: rgb(140, 130, 197);
   opacity: 0;
-  height: 200px;
-  border-radius: 25px;
+  height: 12.5em;
+  border-radius: 1.6em;
   position: absolute;
   right: 45%;
   top: 11.5em;
   animation: shadow 1s 2 1.8s;
 }
 .glow-2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 6.25em;
+  height: 6.25em;
+  border-radius: 3.13em;
   right: 47%;
-  top: 130px;
+  top: 8.13em;
 }
 @keyframes shadow {
   0% {
     opacity: 0;
-    box-shadow: 0px 0px 1.5em 10px rgb(140, 130, 197);
+    box-shadow: 0px 0px 1.5em 0.625em rgb(140, 130, 197);
   }
   100% {
     opacity: 0.5;
-    box-shadow: 0px 0px 100px 100px rgb(140, 130, 197);
+    box-shadow: 0px 0px 6.25em 6.25em rgb(140, 130, 197);
   }
 }
 .ground {
@@ -281,33 +281,33 @@ path {
 }
 .link__draft {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 1.88em;
+  height: 1.88em;
 }
 .robot1 {
   z-index: 2;
-  width: 90px;
-  height: 167px;
+  width: 5.6em;
+  height: 10.4em;
   background: url('/img/robot.png') center/cover;
   position: absolute;
   right: 105%;
-  top: 500px;
+  top: 31.25em;
   animation: robot1 8s forwards;
 }
 .cube1 {
   z-index: 1;
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 2.8em;
+  height: 2.8em;
   background: radial-gradient(#4b6d34, #36261d);
   right: 103%;
-  top: 622px;
+  top: 38.8em;
   animation: cube1 4s forwards, cactus1 0.5s 8s forwards;
 }
 .link__project1 {
   opacity: 0;
-  width: 25px;
-  height: 25px;
+  width: 1.6em;
+  height: 1.6em;
   background: url('/img/flower1.png') center/cover;
   animation: link1 2s 10s forwards;
 }
@@ -322,8 +322,8 @@ path {
 }
 .link__project2 {
   opacity: 0;
-  width: 25px;
-  height: 25px;
+  width: 1.6em;
+  height: 1.6em;
   background: url('/img/flower2.png') center/cover;
   animation: link2 2s 10s forwards;
 }
@@ -338,8 +338,8 @@ path {
 }
 .link__project3 {
   opacity: 0;
-  width: 25px;
-  height: 25px;
+  width: 1.6em;
+  height: 1.6em;
   background: url('/img/flower3.png') center/cover;
   animation: link3 2s 10s forwards;
 }
@@ -354,22 +354,22 @@ path {
 }
 @keyframes robot1 {
   50% {
-    top: 500px;
+    top: 31.25em;
     right: 55%;
   }
   100% {
-    top: 500px;
+    top: 31.25em;
     right: 105%;
   }
 }
 @keyframes cube1 {
   0% {
-    top: 622px;
+    top: 38.8em;
     right: 103%;
     background: radial-gradient(#4b6d34, #36261d);
   }
   100% {
-    top: 622px;
+    top: 38.8em;
     right: 53%;
     transform: rotate(360deg);
   }
@@ -385,100 +385,100 @@ path {
 }
 .robot2 {
   z-index: 3;
-  width: 130px;
-  height: 250px;
+  width: 11.2em;
+  height: 20.8em;
   background: url('/img/robot2.png') center/cover;
   position: absolute;
-  right: -10%;
-  top: 530px;
+  right: -30%;
+  top: 22em;
   animation: robot2 8s 1 forwards;
 }
 .cube2 {
   z-index: 2;
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 4.7em;
+  height: 4.7em;
   background: radial-gradient(#4b6d34, #36261d);
   right: -3%;
-  top: 705px;
+  top: 36em;
   animation: cube2 4s 1 forwards, cactus1 0.5s 7s forwards;
 }
 @keyframes robot2 {
   50% {
-    top: 530px;
-    right: 25%;
+    top: 22em;
+    right: 5%;
   }
   100% {
-    top: 530px;
-    right: -10%;
+    top: 22em;
+    right: -30%;
   }
 }
 @keyframes cube2 {
   0% {
-    top: 705px;
+    top: 36em;
     right: -3%;
   }
   100% {
-    top: 705px;
-    right: 32%;
+    top: 36em;
+    right: 22%;
     transform: rotate(-360deg);
   }
 }
 .robot3 {
   z-index: 2;
-  width: 46px;
-  height: 84px;
+  width: 2.8em;
+  height: 5.25em;
   background: url('/img/robot2.png') center/cover;
   position: absolute;
-  right: -10%;
-  top: 490px;
+  right: -15%;
+  top: 30.6em;
   animation: robot3 8s 1 forwards;
 }
 .cube3 {
   z-index: 1;
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 2.8em;
+  height: 2.8em;
   background: radial-gradient(#4b6d34, #36261d);
   right: -7%;
-  top: 531px;
+  top: 33.2em;
   animation: cube3 4s 1 forwards, cactus1 0.5s 9s forwards;
 }
 @keyframes robot3 {
   50% {
-    top: 490px;
+    top: 30.6em;
     right: 45%;
   }
   100% {
-    top: 490px;
-    right: -10%;
+    top: 30.6em;
+    right: -15%;
   }
 }
 @keyframes cube3 {
   0% {
-    top: 531px;
+    top: 33.2em;
     right: -7%;
   }
   100% {
-    top: 531px;
+    top: 33.2em;
     right: 48%;
     transform: rotate(-360deg);
   }
 }
 .presentation {
-  padding: 30px 0 70px;
-  margin: 30px auto 30px;
+  padding: 1.88em 0 4.4em;
+  margin: 1.88em auto 1.88em;
 }
 
 .presentation__wrapper {
-  max-width: 1204px;
+  max-width: 75.25em;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 .presentation__title,
 .contacts__title {
-  font-size: 32px;
+  font-size: 2em;
 }
 .btn {
   display: flex;
@@ -487,22 +487,22 @@ path {
   justify-content: flex-end;
 }
 .projects {
-  width: 1204px;
+  width: 75.25em;
   height: 61.5em;
-  margin: 30px auto;
+  margin: 1.88em auto;
   overflow: hidden;
 }
 .project__slider {
-  width: 4816px;
-  height: 570px;
+  width: 301em;
+  height: 54.4em;
   display: flex;
   position: relative;
   left: 0;
   transition: all ease 1s;
 }
 .project {
-  width: 602px;
-  height: 570px;
+  width: 37.625em;
+  height: 54.4em;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -533,15 +533,15 @@ path {
   padding: 4rem 4rem 2rem;
 }
 .about__container {
-  max-width: 1440px;
+  max-width: 142.5em;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 6.25em;
   justify-content: center;
 }
 .about__title {
-  padding: 40px 0;
+  padding: 2.5em 0;
 }
 .about__description {
   width: 30%;
@@ -556,16 +556,16 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.625em;
 }
 .skill:hover {
   transform: scale(1.5);
   cursor: pointer;
   color: rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
+  box-shadow: 1px 1px 0.625em 1px rgb(109, 38, 241);
 }
 .contacts {
-  margin-top: 30px;
+  margin-top: 1.88em;
 
   padding: 4rem 4rem 2rem;
   display: flex;
@@ -577,11 +577,11 @@ path {
 .contacts__block {
   display: flex;
   flex-direction: row;
-  gap: 140px;
+  gap: 12.5em;
 }
 .social,
 .phone {
-  max-width: 240px;
+  max-width: 22.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -604,55 +604,55 @@ path {
   margin: 4rem 4rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1em;
 }
 .footer__copyright > p {
   font-size: 1.5em;
 }
 .icon:hover {
   color: rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
+  box-shadow: 1px 1px 0.625em 1px rgb(109, 38, 241);
 }
 @media (width < 480px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .container {
-    max-width: 375px;
+    max-width: 34.7em;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1em;
   }
 
   .header {
-    max-width: 375px;
+    max-width: 34.7em;
   }
   .header__container {
     margin: 1.5rem 0.5rem 0.5rem;
   }
   .description {
-    font-size: 18px;
+    font-size: 0.9em;
   }
 
   .menu__list {
-    gap: 14px;
+    gap: 0.8em;
   }
   .menu__link {
-    font-size: 18px;
+    font-size: 1em;
   }
   .presentation {
-    margin: 60px auto 30px;
+    margin: 3.8em auto 1.88em;
   }
   .presentation__wrapper {
-    max-width: 365px;
+    max-width: 22.8em;
   }
   .projects {
-    width: 365px;
+    width: 22.8em;
   }
   .project__slider {
     width: 291.5em;
   }
   .project {
-    width: 365px;
+    width: 22.8em;
   }
   .about {
     margin: 1rem 1rem 1rem;
