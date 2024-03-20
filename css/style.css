@@ -523,8 +523,9 @@ path {
 }
 .link__github {
   display: flex;
-  flex-direction: column;
-  gap: 1.5em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .link__github > p {
   font-size: 1.5em;
@@ -566,18 +567,20 @@ path {
 }
 .contacts {
   margin-top: 1.88em;
-
   padding: 4rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
 }
-
+.contacts__title {
+  text-align: start;
+  padding: 2em 0 2em;
+}
 .contacts__block {
   display: flex;
   flex-direction: row;
-  gap: 12.5em;
+  gap: 38.5em;
 }
 .social,
 .phone {
@@ -624,7 +627,7 @@ path {
   }
 
   .header {
-    max-width: 34.7em;
+    max-width: 30em;
   }
   .header__container {
     margin: 1.5rem 0.5rem 0.5rem;
