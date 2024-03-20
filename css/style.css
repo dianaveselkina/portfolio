@@ -50,7 +50,7 @@ p {
 .header {
   position: fixed;
   top: 0;
-  width: 96%;
+  width: 97%;
   z-index: 6;
   max-width: 144em;
   background-color: #92a2b8;
@@ -542,6 +542,7 @@ path {
   justify-content: center;
 }
 .about__title {
+  font-size: 2em;
   padding: 2.5em 0;
 }
 .about__description {
@@ -667,6 +668,14 @@ path {
   }
   .project {
     width: 22.8em;
+  }
+  .slider__prev {
+    width: 2em;
+    height: 2em;
+  }
+  .slider__next {
+    width: 2em;
+    height: 2em;
   }
   .about {
     margin: 1rem 1rem 1rem;
