@@ -627,7 +627,7 @@ path {
   }
 
   .header {
-    max-width: 30em;
+    max-width: 35em;
   }
   .header__container {
     margin: 1.5rem 0.5rem 0.5rem;
@@ -654,6 +654,11 @@ path {
   .presentation__wrapper {
     max-width: 22.8em;
   }
+  .presentation__title,
+  .about__title,
+  .contacts__title {
+    font-size: 1.2em;
+  }
   .projects {
     width: 22.8em;
   }
@@ -671,5 +676,21 @@ path {
   }
   .about__description {
     width: 99%;
+  }
+  .contacts__wrapper {
+    max-width: 25em;
+  }
+  .contacts__block {
+    gap: 1.5em;
+  }
+  .contacts__text > p {
+    font-size: 1em;
+  }
+  .contacts__text {
+    font-size: 1em;
+  }
+  .icon__social {
+    width: 30px;
+    height: 30px;
   }
 }
