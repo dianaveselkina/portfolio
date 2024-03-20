@@ -69,24 +69,22 @@ p {
 .menu__list {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1.5em;
 }
 .menu__link {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .animation__wrapper {
   overflow: hidden;
   opacity: 1;
 }
 .animation__container {
-  margin-top: 100px;
+  margin-top: 6.25em;
   width: 100%;
-  height: 800px;
+  height: 50em;
   position: relative;
   overflow: hidden;
   background: url('/img/ground1.png') center/cover;
-  border: 1px solid rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
 .cloud {
   z-index: 5;
@@ -158,7 +156,7 @@ p {
   border-radius: 0 35px 35px 35px;
   transform: rotate(45deg) skewY(0deg);
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
-    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 1.5em 1.5em rgba(0, 0, 0, 0.05),
     inset -10px -10px 15px rgba(189, 235, 241, 0.473);
 }
 .drop > p {
@@ -258,7 +256,7 @@ path {
   border-radius: 25px;
   position: absolute;
   right: 45%;
-  top: 120px;
+  top: 11.5em;
   animation: shadow 1s 2 1.8s;
 }
 .glow-2 {
@@ -271,7 +269,7 @@ path {
 @keyframes shadow {
   0% {
     opacity: 0;
-    box-shadow: 0px 0px 20px 10px rgb(140, 130, 197);
+    box-shadow: 0px 0px 1.5em 10px rgb(140, 130, 197);
   }
   100% {
     opacity: 0.5;
@@ -470,8 +468,6 @@ path {
 .presentation {
   padding: 30px 0 70px;
   margin: 30px auto 30px;
-  border: 1px solid rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
 
 .presentation__wrapper {
@@ -487,12 +483,12 @@ path {
 .btn {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1.5em;
   justify-content: flex-end;
 }
 .projects {
   width: 1204px;
-  height: 620px;
+  height: 61.5em;
   margin: 30px auto;
   overflow: hidden;
 }
@@ -513,8 +509,6 @@ path {
   justify-content: space-between;
   border-radius: 0.5rem;
   background-color: lightgrey;
-  border: 1px solid rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
 .project__photo {
   border-radius: 0.5rem;
@@ -530,14 +524,12 @@ path {
 .link__github {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5em;
 }
 .link__github > p {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .about {
-  border: 1px solid rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
   padding: 4rem 4rem 2rem;
 }
 .about__container {
@@ -558,7 +550,7 @@ path {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1.5em;
 }
 .skill {
   display: flex;
@@ -574,13 +566,12 @@ path {
 }
 .contacts {
   margin-top: 30px;
-  border: 1px solid rgb(109, 38, 241);
-  box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
+
   padding: 4rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.5em;
 }
 
 .contacts__block {
@@ -594,7 +585,7 @@ path {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.5em;
 }
 .social__icons {
   display: flex;
@@ -602,12 +593,12 @@ path {
   justify-content: space-around;
 }
 .contacts__text {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .contacts__text > p {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 1.5em;
 }
 .footer__copyright {
   margin: 4rem 4rem 2rem;
@@ -616,13 +607,13 @@ path {
   gap: 16px;
 }
 .footer__copyright > p {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .icon:hover {
   color: rgb(109, 38, 241);
   box-shadow: 1px 1px 10px 1px rgb(109, 38, 241);
 }
-@media (width<=720px) {
+@media (width < 480px) {
   h1 {
     font-size: 1rem;
   }
@@ -658,7 +649,7 @@ path {
     width: 365px;
   }
   .project__slider {
-    width: 2920px;
+    width: 291.5em;
   }
   .project {
     width: 365px;
