@@ -486,18 +486,15 @@ path {
   gap: 1.5em;
   justify-content: flex-end;
 }
-.projects {
-  width: 75.25em;
+.slider {
+  max-width: 80%;
   height: 61.5em;
-  margin: 1.88em auto;
+  margin: 2em auto;
   overflow: hidden;
 }
-.project__slider {
-  width: 301em;
-  height: 54.4em;
+.slider__line {
   display: flex;
   position: relative;
-  left: 0;
   transition: all ease 1s;
 }
 .project {
@@ -660,15 +657,7 @@ path {
   .contacts__title {
     font-size: 1.2em;
   }
-  .projects {
-    width: 22.8em;
-  }
-  .project__slider {
-    width: 291.5em;
-  }
-  .project {
-    width: 22.8em;
-  }
+
   .slider__prev {
     width: 2em;
     height: 2em;
