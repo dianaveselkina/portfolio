@@ -480,11 +480,15 @@ path {
 .contacts__title {
   font-size: 2em;
 }
+.presentation__title {
+  margin-left: 4em;
+}
 .btn {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
   justify-content: flex-end;
+  margin-right: 8em;
 }
 .slider {
   max-width: 80%;
@@ -521,8 +525,9 @@ path {
 .link__github {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  font-size: 1.5em;
 }
 .link__github > p {
   font-size: 1.5em;
@@ -656,6 +661,9 @@ path {
   .about__title,
   .contacts__title {
     font-size: 1.2em;
+  }
+  .presentation__title {
+    margin-left: 2em;
   }
   .slider {
     height: 35.5em;
