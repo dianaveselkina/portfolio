@@ -657,7 +657,20 @@ path {
   .contacts__title {
     font-size: 1.2em;
   }
+  .slider {
+    height: 35.5em;
+  }
+  .project {
+    height: 34em;
+  }
+  .project__photo {
+    height: 46%;
+    flex-shrink: 0;
+  }
 
+  .project__link {
+    padding: 1em 0;
+  }
   .slider__prev {
     width: 2em;
     height: 2em;
@@ -667,13 +680,16 @@ path {
     height: 2em;
   }
   .about {
-    margin: 1rem 1rem 1rem;
+    padding: 1em;
   }
   .about__container {
     flex-direction: column;
   }
   .about__description {
     width: 99%;
+  }
+  .contacts {
+    padding: 0;
   }
   .contacts__wrapper {
     max-width: 25em;
@@ -690,5 +706,8 @@ path {
   .icon__social {
     width: 30px;
     height: 30px;
+  }
+  .footer__copyright {
+    margin: 1em 1em 4em;
   }
 }
