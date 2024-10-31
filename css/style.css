@@ -509,13 +509,14 @@ path {
 }
 
 [data-tooltip]::after {
+  z-index: 9;
   content: attr(data-tooltip);
   font-size: 0.2em;
   position: absolute;
-  width: 14em;
+  width: 10em;
   border-radius: 0.5em;
-  left: 5em;
-  bottom: 7em;
+  right: 5em;
+  bottom: 3em;
   background: #cad5df;
   opacity: 50%;
   color: #353232;
@@ -526,6 +527,7 @@ path {
 }
 [data-tooltip]:hover::after {
   opacity: 1;
+  z-index: 9;
 }
 .projects {
   background-color: #1c1c28;
