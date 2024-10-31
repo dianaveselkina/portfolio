@@ -64,7 +64,7 @@ p {
   gap: 1.5rem;
 }
 .menu__link {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #fff;
 }
 .presentation {
@@ -92,14 +92,21 @@ p {
   background-color: #f7f7faf8;
   border-radius: 0.2rem;
 }
+.presentation__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .animation {
   background-color: #1c1c28;
 }
+
 .animation__wrapper {
   overflow: hidden;
   opacity: 1;
 }
 .animation__container {
+  position: relative;
   border-radius: 1em;
   margin: 6.25em auto 0.2em;
   width: 80%;
@@ -107,6 +114,19 @@ p {
   position: relative;
   overflow: hidden;
   background: url('/img/ground1.png') center/cover;
+}
+.btn__reload {
+  border-radius: 50%;
+  z-index: 5;
+  cursor: pointer;
+  position: absolute;
+  left: 44%;
+  bottom: 40%;
+  opacity: 24%;
+}
+.btn__reload:hover {
+  color: rgb(109, 38, 241);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgb(109, 38, 241);
 }
 .cloud {
   z-index: 5;
@@ -303,8 +323,8 @@ path {
 }
 .link__draft {
   display: block;
-  width: 0.5em;
-  height: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
 }
 .robot1 {
   z-index: 2;
@@ -490,14 +510,14 @@ path {
 
 [data-tooltip]::after {
   content: attr(data-tooltip);
-  font-size: 0.05em;
+  font-size: 0.2em;
   position: absolute;
-  width: 10em;
+  width: 14em;
   border-radius: 0.5em;
   left: 5em;
   bottom: 7em;
   background: #cad5df;
-  opacity: 30%;
+  opacity: 50%;
   color: #353232;
   padding: 2px;
   pointer-events: none;
@@ -578,16 +598,15 @@ a {
   font-size: 1rem;
 }
 
-.about {
-  padding: 4rem 4rem 2rem;
-}
 .about__container {
   max-width: 142.5em;
   margin: 0 auto;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
   gap: 6.25em;
   justify-content: center;
+  background-color: #1c1c28;
 }
 .about__title {
   font-size: 2em;
@@ -615,12 +634,15 @@ a {
   box-shadow: 1px 1px 0.625em 1px rgb(109, 38, 241);
 }
 .contacts {
-  margin-top: 1.88em;
+  background-color: #1c1c28;
   padding: 4rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
+}
+.contacts__wrapper {
+  padding: 0 8rem;
 }
 .contacts__title {
   text-align: start;
@@ -629,7 +651,7 @@ a {
 .contacts__block {
   display: flex;
   flex-direction: row;
-  gap: 38.5em;
+  gap: 31rem;
 }
 .social,
 .phone {
@@ -639,12 +661,23 @@ a {
   justify-content: space-between;
   gap: 1.5em;
 }
+.phone__number {
+  font-size: 2rem;
+
+  color: black;
+}
 .social__icons {
+  width: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.icon__social:hover {
+  color: rgb(109, 38, 241);
+  box-shadow: 1px 1px 0.625em 1px rgb(109, 38, 241);
+}
 .contacts__text {
+  color: #fff;
   font-size: 1.5em;
 }
 .contacts__text > p {
@@ -657,6 +690,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+.footer {
+  background-color: #1c1c28;
 }
 .footer__copyright > p {
   font-size: 1.5em;
