@@ -740,7 +740,7 @@ a {
   }
   .presentation {
     margin-top: 0;
-    padding: 5rem;
+    padding: 4rem;
   }
   .presentation__container {
     display: flex;
@@ -771,7 +771,7 @@ a {
     flex-shrink: 0;
   }
   .btn {
-    margin-right: 2.1em;
+    margin-top: 1.5rem;
   }
   .project__link {
     padding: 1em 0;
