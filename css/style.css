@@ -599,7 +599,9 @@ a {
   align-items: center;
   font-size: 1rem;
 }
-
+.about {
+  background-color: #1c1c28;
+}
 .about__container {
   max-width: 142.5em;
   margin: 0 auto;
@@ -713,21 +715,22 @@ a {
     padding: 0 1em;
   }
 
-  .header {
-    max-width: 35em;
-  }
   .header__container {
-    margin: 1.5rem 0.5rem 0.5rem;
+    margin: 1.5rem 0.5rem 2.5rem;
+    justify-content: space-evenly;
+  }
+  .header__title {
+    font-size: 1rem;
   }
   .description {
     font-size: 0.9em;
   }
 
   .menu__list {
-    gap: 0.8em;
+    gap: 0.7em;
   }
   .menu__link {
-    font-size: 1em;
+    font-size: 0.5rem;
   }
   .robot2 {
     display: none;
@@ -736,7 +739,12 @@ a {
     display: none;
   }
   .presentation {
-    margin: 3.8em auto 1.88em;
+    margin-top: 0;
+    padding: 5rem;
+  }
+  .presentation__container {
+    display: flex;
+    flex-direction: column;
   }
   .presentation__wrapper {
     max-width: 22.8em;
@@ -748,6 +756,9 @@ a {
   }
   .presentation__title {
     margin-left: 2em;
+  }
+  .presentation__text {
+    font-size: 1rem;
   }
   .slider {
     height: 35.5em;
@@ -773,6 +784,9 @@ a {
     width: 2em;
     height: 2em;
   }
+  .project__text {
+    font-size: 0.8rem;
+  }
   .link__github {
     display: flex;
     flex-direction: column;
@@ -795,6 +809,7 @@ a {
   }
   .contacts__wrapper {
     max-width: 25em;
+    padding: 0;
   }
   .contacts__block {
     gap: 1.5em;
@@ -804,6 +819,9 @@ a {
   }
   .contacts__text {
     font-size: 1em;
+  }
+  .phone__number {
+    font-size: 1rem;
   }
   .icon__social {
     width: 30px;
