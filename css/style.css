@@ -540,7 +540,7 @@ path {
   margin: 0 auto;
 }
 .contacts__title {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 .project__title {
   padding: 0.5rem 0 0.5rem;
@@ -613,7 +613,7 @@ a {
   background-color: #1c1c28;
 }
 .about__title {
-  font-size: 2em;
+  font-size: 1.4em;
   padding: 2.5em 0;
 }
 .about__description {
@@ -659,14 +659,14 @@ a {
 }
 .social,
 .phone {
-  max-width: 22.5em;
+  min-width: 11.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5em;
 }
 .phone__number {
-  font-size: 2rem;
+  font-size: 1.4rem;
 
   color: black;
 }
@@ -682,15 +682,15 @@ a {
 }
 .contacts__text {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .contacts__text > p {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   padding-top: 1.5em;
 }
 .footer__copyright {
-  margin: 4rem 4rem 2rem;
+  margin: 4rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -752,7 +752,7 @@ a {
   .presentation__title,
   .about__title,
   .contacts__title {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .presentation__title {
     margin-left: 2em;
